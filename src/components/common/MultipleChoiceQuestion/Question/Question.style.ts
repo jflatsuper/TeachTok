@@ -38,6 +38,11 @@ const styles = StyleSheet.create({
     color: "white",
     lineHeight: getResponsiveStyle(15.3),
   },
+  description:{
+    fontSize: getResponsiveStyle(13),
+    color: "white",
+    lineHeight: getResponsiveStyle(15.3),
+  },
   questionGroup: {
     height: "90%",
     display: "flex",

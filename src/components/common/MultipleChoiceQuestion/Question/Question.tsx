@@ -89,7 +89,7 @@ const Question: React.FC<QuestionPageProps> = ({
                     {user.name}
                   </CustomText>
                   <CustomText
-                    style={styles.text}
+                    style={styles.description}
                   >
                     {description}
                   </CustomText>

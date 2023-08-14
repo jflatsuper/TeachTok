@@ -42,7 +42,7 @@ const FlashCard: React.FC<FlashCardProps> = ({
   }, [setSelected, selected, fadeAnim, getHeight, fadeHeight]);
 
   return (
-    <Pressable style={{ height: getHeight() }} onPress={fadeInOut}>
+    <Pressable style={{ height: getHeight(),overflow:'hidden' }} onPress={fadeInOut}>
       <View style={styles.container}>
         <View style={styles.groupAll}>
           <View style={{ width: "83%", height: "100%" }}>
@@ -58,7 +58,7 @@ const FlashCard: React.FC<FlashCardProps> = ({
                 {flashcard_front}
               </CustomText>
             </Animated.View>
-            <View style={styles.flashBody}>
+            <Animated.View style={[styles.flashBody]}>
               {selected && (
                 <Animated.View style={{ opacity: fadeAnim }}>
                   <Answer answer={flashcard_back} />
@@ -71,7 +71,7 @@ const FlashCard: React.FC<FlashCardProps> = ({
                   {description}
                 </CustomText>
               </View>
-            </View>
+            </Animated.View>
           </View>
 
           <View style={styles.actionBar}>
