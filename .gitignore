@@ -1,0 +1,12 @@
+node_modules
+
+
+ios/build
+/ios/Pods/
+
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
